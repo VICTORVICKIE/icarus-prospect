@@ -54,7 +54,7 @@ if (!(Test-Path $BackupDir)) {
 
 function Get-IST-DateTime {
     param ([System.DateTime]$Date)
-    $TimeZone = [System.TimeZoneInfo]::FindSystemTimeZoneById("Indian Standard Time")
+    $TimeZone = [System.TimeZoneInfo]::FindSystemTimeZoneById("India Standard Time")
     $DateTime = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId($Date, $TimeZone.Id)
     return $DateTime
 }
